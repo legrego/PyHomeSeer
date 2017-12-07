@@ -1,7 +1,0 @@
-[MASTER]
-reports=no
-
-disable=locally-disabled
-
-[EXCEPTIONS]
-overgeneral-exceptions=Exception,PyHomeSeerError

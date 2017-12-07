@@ -1,9 +1,9 @@
-import pyhomeseer
+from pyhomeseer.homeseer_client import HomeSeerClient
 
-client = pyhomeseer.HomeSeerClient("192.168.1.20", "guest", "guest")
+client = HomeSeerClient("192.168.1.20", "guest", "guest")
 
 # Control by Value
-pyhomeseer.control(client, ref=123, value=255)
+client.control(ref=123, value=255)
 
 # Control by Label
-pyhomeseer.control(client, ref=123, label="On")
+client.control(ref=123, label="On")

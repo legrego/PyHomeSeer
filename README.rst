@@ -1,8 +1,8 @@
 pyhomeseer |Build Status|
 ===========================
 
-.. |Build Status| image:: https://travis-ci.org/balloob/pychromecast.svg?branch=master
-   :target: https://travis-ci.org/balloob/pychromecast
+.. |Build Status| image:: https://travis-ci.org/legrego/PyHomeSeer.svg?branch=master
+   :target: https://travis-ci.org/legrego/PyHomeSeer
 
 Library for Python 3 to communicate with the HomeSeer 3. It
 currently supports:

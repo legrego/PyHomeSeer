@@ -1,8 +1,8 @@
-import pyhomeseer
+from pyhomeseer.homeseer_client import HomeSeerClient
 
-client = pyhomeseer.HomeSeerClient("192.168.1.20", "guest", "guest")
+client = HomeSeerClient("192.168.1.20", "guest", "guest")
 
-all_devices = pyhomeseer.get_devices(client)
+all_devices = client.get_devices()
 
 for device in all_devices:
     print(
@@ -15,6 +15,6 @@ for device in all_devices:
         )
     )
 
-device_by_ref = pyhomeseer.get_devices(client, ref=123)
+device_by_ref = client.get_devices(ref=123)
 
-devices_by_location = pyhomeseer.get_devices(client, location="First Floor")
+devices_by_location = client.get_devices(location="First Floor")
